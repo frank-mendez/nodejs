@@ -7,7 +7,7 @@ const rootDir = require('../util/path');
 
 router.get('/',(req, res, next) => {
     const products = adminData.products;
-    res.render('shop', {prods: products, pageTitle: 'Frank Shop'});
+    res.render('shop', {prods: products, pageTitle: 'Frank Shop', path: '/'});
 });
 
 module.exports = router;
